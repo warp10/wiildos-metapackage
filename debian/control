@@ -5,8 +5,8 @@ Maintainer: Andrea Colangelo <warp10@ubuntu.com>
 Build-Depends: debhelper(>= 9)
 Standards-Version: 3.9.3
 Homepage: http://www.wiild.it/
-Vcs-Bzr: http://launchpad.net/~warp10
-Vcs-Browser: http://launchpad.net/~warp10
+Vcs-Bzr: https://code.launchpad.net/~warp10/+junk/wiild
+Vcs-Browser: http://bazaar.launchpad.net/~warp10/+junk/wiild/files
 
 Package: wiild
 Architecture: all
