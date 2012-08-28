@@ -1,0 +1,59 @@
+Source: wiild
+Section: metapackages
+Priority: optional
+Maintainer: Andrea Colangelo <warp10@ubuntu.com>
+Build-Depends: debhelper(>= 9)
+Standards-Version: 3.9.3
+Homepage: http://www.wiild.it/
+Vcs-Bzr: http://launchpad.net/~warp10
+Vcs-Browser: http://launchpad.net/~warp10
+
+Package: wiild
+Architecture: all
+Depends: ${misc:Depends},
+         curtain,
+         spotlighter,
+         ardesia, 
+         python-whiteboard,
+         epoptes,
+         cellwriter,
+         gnome-orca,
+         gpicview,
+         xournal,
+         dia,
+         inkscape,
+         librecad,
+         pinta,
+         scribus,
+         geany,
+         scratch,
+         kicad,
+         osmo,
+         pdfmod,
+         freeplane,
+         fbreader,
+         ocrfeeder,
+         tuxpaint,
+         collatinus,
+         geogebra,
+         tuxmath,
+         wxmaxima,
+         lybniz,
+         celestia,
+         chemtool,
+         gperiodic,
+         stellarium,
+         gcu-bin,
+         gcompris,
+         jclic,
+         numptyphisics,
+         pingus,
+         musescore,
+         marble
+Description: Metapackage to install a set of education related software
+ This package provides an environment to set-up an electronic checkboard and
+ installs a broad set of software commonly used in education.
+ .
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind
+ 
