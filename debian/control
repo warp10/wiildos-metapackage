@@ -50,8 +50,8 @@ Depends: ${misc:Depends},
          pingus,
          musescore,
          marble
-Description: Metapackage to install a set of education related software
- This metapackage provides an environment to set-up an electronic checkboard and
+Description: Metapackage to install educational whiteboards related software
+ This metapackage provides an environment to set-up a digital checkboard and
  installs a broad set of software commonly used in education.
  .
  WiiLD is a project to improve the advance of Free Software in schools of every
