@@ -8,7 +8,7 @@ Homepage: http://www.wiild.it/
 Vcs-Bzr: https://code.launchpad.net/~warp10/+junk/wiild
 Vcs-Browser: http://bazaar.launchpad.net/~warp10/+junk/wiild/files
 
-Package: wiild
+Package: wiild-core
 Architecture: all
 Depends: ${misc:Depends},
          curtain,
@@ -18,42 +18,118 @@ Depends: ${misc:Depends},
          epoptes,
          cellwriter,
          gnome-orca,
-         gpicview,
-         xournal,
-         dia,
+Description: Metapackage to install educational whiteboards related software
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage installs the core set of WiiLD software
+
+Package: wiild-math
+Architecture: all
+Depends: ${misc:Depends},
+         geogebra,
+         tuxmath,
+         wxmaxima,
+         lybniz,         
+Description: Metapackage to install educational whiteboards related software
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage provides math related software
+
+Package: wiild-science
+Architecture: all
+Depends: ${misc:Depends},
+         stellarium,
+         celestia,
+         numptyphysics,
+         chemtool,
+         gperiodic,
+         kicad,
+         gcu-bin,
+Description: Metapackage to install educational whiteboards related software
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage provides science related software
+
+Package: wiild-graphic
+Architecture: all
+Depends: ${misc:Depends},
          inkscape,
-         librecad,
+         gpicview,
+         tuxpaint,
          pinta,
+         ocrfeeder,
+         librecad,
          scribus,
+Description: Metapackage to install educational whiteboards related software
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage provides graphic related software
+
+Package: wiild-programming
+Architecture: all
+Depends: ${misc:Depends},
          geany,
          scratch,
-         kicad,
+Description: Metapackage to install educational whiteboards related software
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage provides programming related software
+ 
+Package: wiild-misc
+Architecture: all
+Depends: ${misc:Depends},
          osmo,
          pdfmod,
          freeplane,
          fbreader,
-         ocrfeeder,
-         tuxpaint,
          collatinus,
-         geogebra,
-         tuxmath,
-         wxmaxima,
-         lybniz,
-         celestia,
-         chemtool,
-         gperiodic,
-         stellarium,
-         gcu-bin,
          gcompris,
          jclic,
-         numptyphisics,
          pingus,
          musescore,
+         xournal,
+         dia,
          marble
 Description: Metapackage to install educational whiteboards related software
- This metapackage provides an environment to set-up a digital checkboard and
- installs a broad set of software commonly used in education.
- .
  WiiLD is a project to improve the advance of Free Software in schools of every
- level and kind
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage provides misc educational software
  
+Package: wiild-all
+Architecture: all
+Depends: ${misc:Depends},
+         wiild-core,
+         wiild-astronomy,
+         wiild-math,
+         wiild-graphic,
+         wiild-programming,
+         wiild-misc
+Description: Metapackage to install educational whiteboards related software
+ WiiLD is a project to improve the advance of Free Software in schools of every
+ level and kind. WiiLD-related software provides an environment to set-up a
+ digital checkboard and  installs a broad set of software commonly used in
+ education.
+ .
+ This metapackage install the whole set of software related to the WiiLD
+ project.
+
+
+
